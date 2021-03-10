@@ -18,7 +18,7 @@ while True:
         guessed_letters.append(user_input)
         count = 0
         word_temp = word
-        while count != word.count(user_input):
+        while count != word.count(user_input): #TODO fix index assignment bug in word_completion
             index = word_temp.find(user_input)
             word_completion = word_completion[:index] + user_input + word_completion[index + 1:]
             word_temp = word_temp[index:]
@@ -28,4 +28,5 @@ while True:
         count -= count
     else:
         tries -= 1
+
 
