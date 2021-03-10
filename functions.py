@@ -79,12 +79,14 @@ def display_hangman(tries):
     ]
     return stages[tries]
 
-def play(word):
-    while True:
-        print('Давайте играть в угадайку слов!')
-        print(display_hangman(tries))
-        word_completion = '_' * len(word)  # строка, содержащая символы _ на каждую букву задуманного слова
-        guessed = False  # сигнальная метка
-        guessed_letters = []  # список уже названных букв
-        guessed_words = []  # список уже названных слов
-        tries = 6  # количество попыток
+
+
+
+
+
+
+
+
+
+
+
